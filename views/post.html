@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+	<div class="page-header container">
+  		<h1>首页<small>发表评论</small></h1>
+	</div>
+	<div class="bs-example container" data-example-id="basic-forms">
+    <!-- <form action="/pinglun" method="get"> -->
+    <form action="/post" method="post">
+      <div class="form-group">
+        <label for="name">用户名</label>
+        <input type="text" name="name" class="form-control" id="name" placeholder="Enter username">
+      </div>
+      <div class="form-group">
+        <label for="text">发表内容</label>
+        <textarea name="message" id="text" cols="30" rows="10" class="form-control" ></textarea>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

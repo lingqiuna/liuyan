@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css"> -->
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+	<div class="page-header container">
+  		<h1>Example page header <small>Subtext for header</small></h1>
+  		<a href="/post" class="btn btn-success">发表言论</a>
+	</div>
+	<!-- <div class="bs-example container" data-example-id="list-group-badges">
+    <ul class="list-group">
+    {{ each comments }}
+      <li class="list-group-item">
+        <span class="badge">{{ $value.dataTime }}</span>
+        {{ $value.name }}说：{{ $value.message }}
+      </li>
+      {{ /each }}
+    </ul>
+
+  </div> -->
+	<div class="comments container">
+    <ul class="list-group">
+      {{each comments}}
+      <li class="list-group-item">{{ $value.name }}说：{{ $value.message }} <span class="pull-right">{{ $value.dataTime }}</span></li>
+      {{/each}}
+    </ul>
+  </div>
+</body>
+</html>
